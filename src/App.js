@@ -11,6 +11,10 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
+    path: "/",
+    element: <Login />,
+  },
+  {
     path: "/cadastro",
     element: <Cadastro />,
   },
