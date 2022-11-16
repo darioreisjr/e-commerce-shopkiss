@@ -1,0 +1,60 @@
+
+.cadastro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    width: 47%;
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-container h2{
+    color: #FFF;
+    font-size: 54px;
+}
+
+.container-botao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-botao button{
+    height: 50px;
+    padding: 0 20px ;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+}
+
+@media only screen 
+   and (max-width : 960px) {
+    .cadastro-container {
+        flex-direction: column;
+    }
+
+    section{
+        width: 95%;
+    }
+    
+    .container-botao{
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .container-botao button{
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    
+}
