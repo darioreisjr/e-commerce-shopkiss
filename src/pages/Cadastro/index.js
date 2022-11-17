@@ -17,7 +17,7 @@ export default function Cadastro() {
   return (
     <main className="cadastro-container">
       <section>
-        <Logo />
+        <Logo/>
       </section>
 
       <section className="form-container">
