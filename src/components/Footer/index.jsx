@@ -2,17 +2,48 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
+
+import Logo from '../Logo'
 
 
 export default function Footer() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, marginTop: 12 }}>
+      <Divider variant="fullWidth middle" />
       <Grid container spacing={2} marginBottom={2}>
 
         <Grid item xs={4}>
           <Container maxWidth="sm">
-            <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
+            <Box>
+              <Logo />
+            </Box>
+            <Box>
+              <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi suscipit excepturi nobis cupiditate odio rem tempore. Corporis illo modi debitis? Consequatur, quidem reprehenderit. Eius natus repellat quaerat, nam cum voluptatum?</Typography>
+            </Box>
+            <Box>
+              <Typography>
+                Accepted Payments
+              </Typography>
+
+              <Box>
+                <Stack direction="row" spacing={2}>
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/stripe-3629090-3030362.png" width={60} />
+                  <img src="https://logospng.org/download/visa/logo-visa-256.png" width={60} />
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/mastercard-3521564-2944982.png" width={60} />
+                  <img src="https://logospng.org/download/amazon/logo-amazon-256.png" width={60} />
+
+                </Stack>
+                <Stack direction="row" spacing={2}>
+                  <img src="https://logoeps.com/wp-content/uploads/2014/02/39073-klarna-logo-icon-vector-icon-vector-eps.png" width={60} />
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/paypal-3628972-3030197.png" width={60} />
+                  <img src="https://cdn-icons-png.flaticon.com/128/5968/5968144.png" width={60} />
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/google-pay-3628807-3030084.png" width={60} />
+
+                </Stack>
+              </Box>
+
+            </Box>
           </Container>
         </Grid>
 
@@ -90,20 +121,29 @@ export default function Footer() {
 
       </Grid>
 
-      <Grid container spacing={4}>
+      <Divider />
+      <Grid container spacing={4} marginTop={3} marginBottom={3}>
         <Grid item xs={4}>
           <Container maxWidth="sm">
-            <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
+            <Stack direction="row" spacing={2}>
+              <Typography>Become Seller</Typography>
+              <Typography>Gift Cards</Typography>
+              <Typography>Help Center</Typography>
+            </Stack>
           </Container>
+        </Grid>
+        <Grid item xs={4} direction="row">
+          <Container maxWidth="sm" >
+            <Stack direction="row" spacing={2}>
+              <Typography> Terms of Use</Typography>
+              <Typography> Privacy Policy</Typography>
+            </Stack>
+          </Container>
+
         </Grid>
         <Grid item xs={4}>
           <Container maxWidth="sm">
-            <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
-          </Container>
-        </Grid>
-        <Grid item xs={4}>
-          <Container maxWidth="sm">
-            <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} /> 
+            <Typography> All Right reserved by ShopKiss | 2022</Typography>
           </Container>
         </Grid>
       </Grid>
