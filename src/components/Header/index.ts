@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { useState } from "react";
 
 import "./header.css";
 
@@ -21,7 +21,7 @@ import {
 
 import MenuIcon from "@material-ui/icons/Menu";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
-import Logo from "./../Logo/index";
+import Logo from "../Logo/index";
 import { useNavigate } from "react-router-dom";
 
 const linksNavegacao = [

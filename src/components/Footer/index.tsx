@@ -9,11 +9,12 @@ import Logo from '../Logo'
 
 export default function Footer() {
   return (
-    <Box sx={{ flexGrow: 1, marginTop: 12 }}>
+    <Box sx={{ flexGrow: 1, marginTop: 120 }}>
       <Divider variant="fullWidth middle" />
-      <Grid container spacing={2} marginBottom={2}>
 
-        <Grid item xs={4}>
+      <Grid xs={{display: 'flex'}}   container spacing={2} marginBottom={2}>
+
+        <Grid item xs={4} >
           <Container maxWidth="sm">
             <Box>
               <Logo />
